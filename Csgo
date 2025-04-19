@@ -8,6 +8,23 @@ local longstring1 = "An immortal stone filled with the essence of a Divine Lante
 local fish = game:GetService("ReplicatedStorage"):WaitForChild("resources"):WaitForChild("animations"):WaitForChild("fish")
 local module = require(game:GetService("ReplicatedStorage").shared.modules.library.fish.presents)
 
+local tbl = {
+	["Desolate Deep"] = {
+		Trash = 22;
+		Common = 22;
+		Uncommon = 18;
+		Unusual = 17;
+		Rare = 14;
+	};
+	["Brine Pool"] = {
+		Trash = 29;
+		Common = 29;
+		Uncommon = 25;
+		Unusual = 23;
+		Rare = 15;
+	};
+}
+
 local module_2_upvr = {
 	["Moon Idol Sea 1"] = {
 		Icon = "rbxassetid://74189195141290";
