@@ -427,23 +427,4 @@ local module_upvr = {
 		Relic = Color3.fromRGB(120, 255, 183);
 	};
 }
-function module_upvr.ToInteger(arg1, arg2) -- Line 559
-	return math.floor(arg2.r * 255) * 65536 + math.floor(arg2.g * 255) * 256 + math.floor(arg2.b * 255)
-end
-function module_upvr.ToHex(arg1, arg2) -- Line 563
-	--[[ Upvalues[1]:
-		[1]: module_upvr (readonly)
-	]]
-	local any_ToInteger_result1 = module_upvr:ToInteger(arg2)
-	local var96
-	repeat
-		local var97 = any_ToInteger_result1 % 16
-		local tostring_result1 = tostring(var97)
-		if 10 <= var97 then
-			tostring_result1 = ({'A', 'B', 'C', 'D', 'E', 'F'})[1 + var97 - 10]
-		end
-		var96 = var96..tostring_result1
-	until math.floor(any_ToInteger_result1 / 16) <= 0
-	return '#'..string.reverse(var96)
-end
 return module_upvr
