@@ -6,7 +6,7 @@
 
 local longstring1 = "An immortal stone filled with the essence of a Divine Lantern Keeper.. Returning it to it's throne under the Statue of Sovereignty will result in your currently equipped rod being blessed with its immense power."
 local fish = game:GetService("ReplicatedStorage"):WaitForChild("resources"):WaitForChild("animations"):WaitForChild("fish")
-local module = require(script:WaitForChild("presents"))
+local module = require(game:GetService("ReplicatedStorage").shared.modules.library.fish.presents)
 
 local module_2_upvr = {
 	["Moon Idol Sea 1"] = {
